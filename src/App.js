@@ -127,6 +127,13 @@ function App() {
     let cost = CONFIG.WEI_COST;
     let gasLimit = CONFIG.GAS_LIMIT;
     let totalCostWei = String(cost * mintAmount);
+    if (data.totalSupply < 1000){
+      console.log(data.totalSupply)
+      totalCostWei = String(0);
+    } else {
+      totalCostWei = String(cost * mintAmount);
+    }
+    
     let totalGasLimit = String(gasLimit * mintAmount);
     console.log("Cost: ", totalCostWei);
     console.log("Gas limit: ", totalGasLimit);
@@ -165,9 +172,16 @@ function App() {
 
   const incrementMintAmount = () => {
     let newMintAmount = mintAmount + 1;
-    if (newMintAmount > 10) {
-      newMintAmount = 10;
+    if (data.totalSupply < 1000) {
+      if (newMintAmount > 2) {
+        newMintAmount = 2;
+      }
+    } else {
+      if (newMintAmount > 10) {
+        newMintAmount = 10;
+      }
     }
+    
     setMintAmount(newMintAmount);
   };
 
@@ -299,14 +313,13 @@ function App() {
                     </s.TextDescription>
                     <s.SpacerSmall />
                     <StyledButton
-                      disabled
                       onClick={(e) => {
                         e.preventDefault();
                         dispatch(connect());
                         getData();
                       }}
                     >
-                     Wait for mint
+                     Connect Wallet
                     </StyledButton>
                     {blockchain.errorMsg !== "" ? (
                       <>
