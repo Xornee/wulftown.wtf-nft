@@ -289,13 +289,14 @@ function App() {
                     </s.TextDescription>
                     <s.SpacerSmall />
                     <StyledButton
+                      disabled
                       onClick={(e) => {
                         e.preventDefault();
                         dispatch(connect());
                         getData();
                       }}
                     >
-                      CONNECT
+                     Wait for mint
                     </StyledButton>
                     {blockchain.errorMsg !== "" ? (
                       <>
