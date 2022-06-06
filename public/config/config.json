@@ -2,9 +2,9 @@
   "CONTRACT_ADDRESS": "0xeF7019FBF3De1cB3D64CD8C7eF18a64605E125f1",
   "SCAN_LINK": "https://rinkeby.etherscan.io/address/0xeF7019FBF3De1cB3D64CD8C7eF18a64605E125f1",
   "NETWORK": {
-    "NAME": "Rinkeby Testnet",
+    "NAME": "Ethereum",
     "SYMBOL": "ETH",
-    "ID": 4
+    "ID": 1
   },
   "NFT_NAME": "Wulftown.wtf",
   "SYMBOL": "WLF",

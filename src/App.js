@@ -275,6 +275,16 @@ function App() {
                 >
                   Excluding gas fees.
                 </s.TextDescription>
+                <s.TextDescription
+                  style={{ textAlign: "center", color: "var(--accent-text)", fontSize: "2rem" }}
+                >
+                  First 1000 free mint 2 per wallet 
+                </s.TextDescription>
+                <s.TextDescription
+                  style={{ textAlign: "center", color: "var(--accent-text)", fontSize: "2rem"}}
+                >
+                  Rest 0.003  10 per wallet
+                </s.TextDescription>
                 <s.SpacerSmall />
                 {blockchain.account === "" ||
                 blockchain.smartContract === null ? (
