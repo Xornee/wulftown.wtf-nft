@@ -422,10 +422,11 @@ function App() {
             style={{
               textAlign: "center",
               color: "var(--primary-text)",
+              fontSize: "1.5rem",
             }}
           >
             We have set the gas limit to {CONFIG.GAS_LIMIT} for the contract to
-            successfully mint your NFT. We recommend that you don't lower the
+            successfully mint your NFT. If you now what you are doing, you can change
             gas limit.
           </s.TextDescription>
         </s.Container>
