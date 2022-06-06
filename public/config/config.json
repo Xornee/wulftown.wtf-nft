@@ -11,7 +11,7 @@
   "MAX_SUPPLY": 3333,
   "WEI_COST": 3000000000000000,
   "DISPLAY_COST": 0.003,
-  "GAS_LIMIT": 27000,
+  "GAS_LIMIT": 120000,
   "MARKETPLACE": "Opeansea",
   "MARKETPLACE_LINK": "https://opensea.io/collection/Wulftown.wtf",
   "SHOW_BACKGROUND": true
